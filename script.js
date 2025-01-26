@@ -11,6 +11,13 @@ cat.addEventListener("click", () => {
     let newSize = Math.random() * (200 - 100) + 100;
     cat.style.width = `${newSize}px`;
 
+    let score = 0; // Reset score to 0
+
+    document.getElementById("restart-game").addEventListener("click", function) {
+        score = 0;
+        document.getElementById("score").textContent = score;
+    } ) ;
+
     // Play random cat sound
     let meowSounds = ["meow1.mp3", "meow2.mp3", "meow3.mp3"];
     let randomMeow = meowSounds[Math.floor(Math.random() * meowSounds.length)];
