@@ -11,8 +11,6 @@ cat.addEventListener("click", () => {
     let newSize = Math.random() * (200 - 100) + 100;
     cat.style.width = `${newSize}px`;
 
-    score = 0; // Reset score to 0
-
     document.getElementById("restart-game").addEventListener("click", function) {
         score = 0;
         document.getElementById("score").textContent = score;
